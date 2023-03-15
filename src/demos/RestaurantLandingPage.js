@@ -30,7 +30,7 @@ export default () => {
   }
  
   const Subheading = tw.span`tracking-wider text-base font-medium text-primary-400`;
-  const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
+  const HighlightedText = styled.span`${tw`font-bold font-mono`}	color: #4CB2E4`;
   const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`;
   const Description = tw.span`inline-block mt-8`;
   const imageCss = tw`rounded-4xl`;
@@ -80,18 +80,18 @@ export default () => {
           cards={[
             {
               imageSrc: fragranceIconImageSrc,
-              title: "Ketahanan Aroma",
-              description: "Aroma parfum tahan hingga 12 sampai 24 Jam",
+              title: "Aroma Berkelas",
+              description: "Aroma yang sama dengan parfum original",
             },
             {
               imageSrc: substanceIconImageSrc,
               title: "Bahan Berkualitas",
-              description: "Terbuat dari konsentrat asli Eropa dan alkohol khusus parfum",
+              description: "Terbuat dari konsentrat asli Eropa",
             },
             {
               imageSrc: moneyIconImageSrc,
               title: "Harga Terjangkau",
-              description: "Harga yang ramah dikantong dengan isi yang tahan hingga 1 bulan",
+              description: "Harga yang ramah dikantong",
             }
           ]}
 
